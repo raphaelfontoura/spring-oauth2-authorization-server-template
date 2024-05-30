@@ -65,7 +65,7 @@ public class SecurityConfig {
     @Bean
     public UserDetailsService userDetailsService() {
         var password = passwordEncoder().encode("123456");
-        var user = User.withUsername("raphael")
+        var user = User.withUsername("user")
                 .password(password)
                 .authorities("read")
                 .build();
